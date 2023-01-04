@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  selenium-server:
+    build: .
+    working_dir: /var/task
+    hostname: selenium-server
+    volumes:
+      - .:/var/task
+    ports:
+      - "9000:8080"
